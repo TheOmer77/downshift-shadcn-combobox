@@ -68,7 +68,12 @@ export const ComboBox = ({
         case stateChangeTypes.InputClick:
         case stateChangeTypes.InputKeyDownEnter:
         case stateChangeTypes.InputKeyDownEscape: {
-          if (changes.isOpen || !prev.isOpen) return changes;
+          if (changes.isOpen || !prev.isOpen)
+            return {
+              ...changes,
+              inputValue: prev.inputValue,
+              selectedItem: prev.selectedItem,
+            };
           if (!prev.inputValue && prev.highlightedIndex < 0)
             return { ...changes, inputValue: '', selectedItem: null };
 
