@@ -20,10 +20,7 @@ export const ComboboxInput = (props: ComboboxInputProps) => {
       <PopoverAnchor asChild>
         <Input {...props} {...getInputProps?.()} />
       </PopoverAnchor>
-      <div
-        className='absolute end-3 inset-y-0 grid place-items-center h-full
-pointer-events-none'
-      >
+      <div className='pointer-events-none absolute inset-y-0 end-3 grid h-full place-items-center'>
         <ChevronDownIcon className='size-4 opacity-50' />
       </div>
     </div>

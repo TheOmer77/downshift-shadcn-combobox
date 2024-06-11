@@ -13,13 +13,13 @@ import { BOOKS } from '@/constants/items';
 const App = () => {
   const [value, setValue] = useState<string | null>(null);
   const bookByValue = useMemo(
-    () => (value && BOOKS.find((book) => book.id === value)) || null,
+    () => (value && BOOKS.find(book => book.id === value)) || null,
     [value]
   );
 
   return (
-    <div className='flex flex-col gap-4 justify-center items-start px-8 py-16 md:py-32 w-full max-w-md mx-auto'>
-      <h1 className='text-3xl font-bold tracking-tight text-center'>
+    <div className='mx-auto flex w-full max-w-md flex-col items-start justify-center gap-4 px-8 py-16 md:py-32'>
+      <h1 className='text-center text-3xl font-bold tracking-tight'>
         Shadcn/ui Combobox
       </h1>
       <ComboBox
@@ -27,7 +27,7 @@ const App = () => {
         onValueChange={setValue}
         filterItems={(inputValue, items) =>
           items.filter(({ value }) => {
-            const book = BOOKS.find((book) => book.id === value);
+            const book = BOOKS.find(book => book.id === value);
             return (
               !inputValue ||
               (book &&
@@ -77,10 +77,7 @@ const App = () => {
         {value && (
           <>
             <span className='text-sm text-muted-foreground'>Value:</span>
-            <span
-              className='font-mono text-muted-foreground px-2 py-1.5 bg-muted
-rounded-sm'
-            >
+            <span className='rounded-sm bg-muted px-2 py-1.5 font-mono text-muted-foreground'>
               {value}
             </span>
           </>

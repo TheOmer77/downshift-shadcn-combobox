@@ -25,7 +25,7 @@ export const ComboboxItem = ({
     [disabled, label, value]
   );
   const index = (filteredItems || []).findIndex(
-    (item) => item.value.toLowerCase() === value.toLowerCase()
+    item => item.value.toLowerCase() === value.toLowerCase()
   );
   if (index < 0) return null;
 
@@ -34,9 +34,7 @@ export const ComboboxItem = ({
       {...props}
       data-index={index}
       className={cn(
-        `relative py-1.5 px-3 flex flex-col rounded-sm cursor-default select-none
-aria-disabled:pointer-events-none aria-disabled:opacity-50
-aria-selected:bg-accent aria-selected:text-accent-foreground`,
+        `relative flex cursor-default select-none flex-col rounded-sm px-3 py-1.5 aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-selected:bg-accent aria-selected:text-accent-foreground`,
         !children && 'ps-8',
         className
       )}
@@ -44,7 +42,7 @@ aria-selected:bg-accent aria-selected:text-accent-foreground`,
     >
       {children || (
         <>
-          <span className='text-foreground text-sm'>{label}</span>
+          <span className='text-sm text-foreground'>{label}</span>
           {isSelected && (
             <span className='absolute start-3 top-0 flex h-full items-center justify-center'>
               <CircleIcon className='size-2 fill-current' />

@@ -15,7 +15,7 @@ const { stateChangeTypes } = useCombobox;
 
 const defaultFilter = (inputValue: string, items: ComboboxItemBase[]) =>
   items.filter(
-    (item) =>
+    item =>
       !inputValue || item.label.toLowerCase().includes(inputValue.toLowerCase())
   );
 
@@ -96,12 +96,12 @@ export const ComboBox = ({
     setInputValue,
   } = useCombobox({
     items: filteredItems,
-    itemToString: (item) => (item ? item.label : ''),
-    isItemDisabled: (item) => item.disabled ?? false,
+    itemToString: item => (item ? item.label : ''),
+    isItemDisabled: item => item.disabled ?? false,
 
     selectedItem:
       typeof value !== 'undefined'
-        ? items.find((item) => item.value === value) || null
+        ? items.find(item => item.value === value) || null
         : undefined,
     onSelectedItemChange: ({ selectedItem }) =>
       onValueChange?.(selectedItem?.value || null),

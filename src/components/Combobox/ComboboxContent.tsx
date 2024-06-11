@@ -33,7 +33,7 @@ export const ComboboxContent = ({
 
   useEffect(() => {
     onItemsChange?.(
-      childItems.map((child) => ({
+      childItems.map(child => ({
         disabled: child.props.disabled,
         label: child.props.label,
         value: child.props.value,
@@ -46,7 +46,7 @@ export const ComboboxContent = ({
       {...props}
       forceMount
       asChild
-      onOpenAutoFocus={(e) => {
+      onOpenAutoFocus={e => {
         e.preventDefault();
         onOpenAutoFocus?.(e);
       }}
@@ -57,10 +57,7 @@ export const ComboboxContent = ({
       )}
       {...getMenuProps?.()}
     >
-      <ScrollArea
-        className='[&>[data-radix-scroll-area-viewport]]:p-1
-[&>[data-radix-scroll-area-viewport]]:max-h-80'
-      >
+      <ScrollArea className='[&>[data-radix-scroll-area-viewport]]:max-h-80 [&>[data-radix-scroll-area-viewport]]:p-1'>
         {children}
       </ScrollArea>
     </PopoverContent>

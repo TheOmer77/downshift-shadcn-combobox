@@ -15,7 +15,7 @@ export const ComboboxEmpty = ({
   return (
     <div
       {...props}
-      className={cn('text-sm text-muted-foreground text-center p-4', className)}
+      className={cn('p-4 text-center text-sm text-muted-foreground', className)}
     >
       {children}
     </div>
