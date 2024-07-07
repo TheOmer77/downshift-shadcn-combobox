@@ -26,4 +26,4 @@ export const BOOKS = [
     title: 'Crime and Punishment',
     author: 'Fyodor Dostoevsky',
   },
-];
+] satisfies { id: string; title: string; author: string }[];
