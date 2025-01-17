@@ -10,12 +10,6 @@ export const checkFile = {
       { '**/*.{ts,tsx}': 'KEBAB_CASE' },
       { ignoreMiddleExtensions: true },
     ],
-    'check-file/folder-naming-convention': [
-      'warn',
-      {
-        'src/app/**': 'NEXT_JS_APP_ROUTER_CASE',
-        'src/!(app)/**': 'KEBAB_CASE',
-      },
-    ],
+    'check-file/folder-naming-convention': ['warn', { 'src/**': 'KEBAB_CASE' }],
   },
 };
