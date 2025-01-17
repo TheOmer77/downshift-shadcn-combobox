@@ -1,3 +1,4 @@
+// eslint-disable-next-line import-x/default
 import preferArrowFunctions from 'eslint-plugin-prefer-arrow-functions';
 
 /** @type {import("typescript-eslint").ConfigWithExtends} */

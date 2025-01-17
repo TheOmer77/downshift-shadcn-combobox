@@ -1,4 +1,5 @@
 import eslint from '@eslint/js';
+// eslint-disable-next-line import-x/default
 import prettier from 'eslint-config-prettier';
 import importX from 'eslint-plugin-import-x';
 import react from 'eslint-plugin-react';
@@ -16,6 +17,7 @@ import { sortImports } from './src/config/eslint/rules/sort-imports.mjs';
 
 const config = tseslint.config(
   eslint.configs.recommended,
+  // eslint-disable-next-line import-x/no-named-as-default-member
   ...tseslint.configs.recommended,
   importX.flatConfigs.recommended,
   importX.flatConfigs.typescript,
