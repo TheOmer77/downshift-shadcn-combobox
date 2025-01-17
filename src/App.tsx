@@ -1,4 +1,4 @@
-import { ComboboxDemo } from './components/demos/combobox';
+import { ComboboxDemo } from '@/components/demos/combobox';
 
 const App = () => (
   <div className='mx-auto w-full max-w-md space-y-4 px-8 py-16 md:py-32'>
