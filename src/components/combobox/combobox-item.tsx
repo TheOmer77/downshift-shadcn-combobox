@@ -1,9 +1,9 @@
-import { useMemo, type ComponentPropsWithoutRef } from 'react';
+import { type ComponentPropsWithoutRef, useMemo } from 'react';
 import { CircleIcon } from 'lucide-react';
 
-import { useComboboxContext } from './context';
 import { cn } from '@/lib/utils';
 
+import { useComboboxContext } from './context';
 import type { ComboboxItemBase } from './types';
 
 export type ComboboxItemProps = ComboboxItemBase &

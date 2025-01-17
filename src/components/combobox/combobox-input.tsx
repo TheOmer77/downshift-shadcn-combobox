@@ -1,6 +1,6 @@
 import type { ComponentPropsWithoutRef } from 'react';
-import type { UseComboboxGetInputPropsReturnValue } from 'downshift';
 import { PopoverAnchor } from '@radix-ui/react-popover';
+import type { UseComboboxGetInputPropsReturnValue } from 'downshift';
 import { ChevronDownIcon } from 'lucide-react';
 
 import { Input } from '@/components/ui/input';

@@ -1,8 +1,8 @@
 import {
+  type PropsWithChildren,
   useCallback,
   useEffect,
   useState,
-  type PropsWithChildren,
 } from 'react';
 import { useCombobox, type UseComboboxProps } from 'downshift';
 

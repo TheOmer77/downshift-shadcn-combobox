@@ -1,18 +1,18 @@
 import {
   Children,
+  type ComponentPropsWithoutRef,
   isValidElement,
+  type ReactElement,
   useEffect,
   useMemo,
-  type ComponentPropsWithoutRef,
-  type ReactElement,
 } from 'react';
 
 import { PopoverContent } from '@/components/ui/popover';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { cn } from '@/lib/utils';
 
+import { ComboboxItem, type ComboboxItemProps } from './combobox-item';
 import { useComboboxContext } from './context';
-import { ComboboxItem, type ComboboxItemProps } from './ComboboxItem';
 
 export const ComboboxContent = ({
   onOpenAutoFocus,
