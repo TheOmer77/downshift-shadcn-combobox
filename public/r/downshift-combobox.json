@@ -9,11 +9,6 @@
   "dependencies": [
     "downshift"
   ],
-  "devDependencies": [],
-  "tailwind": {
-    "config": {}
-  },
-  "cssVars": {},
   "files": [
     {
       "path": "src/components/Combobox/Combobox.tsx",
