@@ -18,7 +18,7 @@ export const ComboboxDemo = () => {
   );
 
   return (
-    <>
+    <div className='space-y-4'>
       <Combobox
         value={value}
         onValueChange={setValue}
@@ -80,6 +80,6 @@ export const ComboboxDemo = () => {
           </>
         )}
       </div>
-    </>
+    </div>
   );
 };
