@@ -3,7 +3,8 @@
   "type": "registry:ui",
   "registryDependencies": [
     "input",
-    "popover"
+    "popover",
+    "scroll-area"
   ],
   "dependencies": [
     "downshift"
