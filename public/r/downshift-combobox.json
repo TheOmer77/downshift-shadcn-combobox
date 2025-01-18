@@ -2,6 +2,7 @@
   "name": "downshift-combobox",
   "type": "registry:ui",
   "registryDependencies": [
+    "input",
     "popover"
   ],
   "dependencies": [
