@@ -1,4 +1,8 @@
-import { ComponentPropsWithoutRef, ComponentRef, forwardRef } from 'react';
+import {
+  type ComponentPropsWithoutRef,
+  type ComponentRef,
+  forwardRef,
+} from 'react';
 import { Content, Portal } from '@radix-ui/react-popover';
 
 import { cn } from '@/lib/utils';
