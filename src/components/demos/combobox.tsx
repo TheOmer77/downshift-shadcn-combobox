@@ -2,7 +2,7 @@ import { useMemo, useState } from 'react';
 import { CheckIcon } from 'lucide-react';
 
 import {
-  ComboBox,
+  Combobox,
   ComboboxContent,
   ComboboxEmpty,
   ComboboxInput,
@@ -19,7 +19,7 @@ export const ComboboxDemo = () => {
 
   return (
     <>
-      <ComboBox
+      <Combobox
         value={value}
         onValueChange={setValue}
         filterItems={(inputValue, items) =>
@@ -55,7 +55,7 @@ export const ComboboxDemo = () => {
           ))}
           <ComboboxEmpty>No results.</ComboboxEmpty>
         </ComboboxContent>
-      </ComboBox>
+      </Combobox>
 
       <div className='flex flex-col items-start'>
         {bookByValue ? (

@@ -28,7 +28,7 @@ export type ComboboxProps = PropsWithChildren<{
   ) => ComboboxItemBase[];
 }>;
 
-export const ComboBox = ({
+export const Combobox = ({
   value,
   onValueChange,
   filterItems = defaultFilter,
