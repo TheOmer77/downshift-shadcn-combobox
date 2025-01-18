@@ -7,7 +7,7 @@ import {
   ComboboxEmpty,
   ComboboxInput,
   ComboboxItem,
-} from '@/components/combobox';
+} from '@/registry/combobox';
 import { BOOKS } from '@/constants/items';
 
 export const ComboboxDemo = () => {
