@@ -27,8 +27,8 @@ importers:
         specifier: ^9.0.8
         version: 9.0.8(react@19.0.0)
       lucide-react:
-        specifier: ^0.472.0
-        version: 0.472.0(react@19.0.0)
+        specifier: ^0.473.0
+        version: 0.473.0(react@19.0.0)
       react:
         specifier: ^19.0.0
         version: 19.0.0
@@ -94,8 +94,8 @@ importers:
         specifier: ^12.1.1
         version: 12.1.1(eslint@9.18.0(jiti@1.21.7))
       eslint-plugin-tailwindcss:
-        specifier: ^3.17.5
-        version: 3.17.5(tailwindcss@3.4.17)
+        specifier: ^3.18.0
+        version: 3.18.0(tailwindcss@3.4.17)
       globals:
         specifier: ^15.14.0
         version: 15.14.0
@@ -1452,8 +1452,8 @@ packages:
     peerDependencies:
       eslint: '>=5.0.0'
 
-  eslint-plugin-tailwindcss@3.17.5:
-    resolution: {integrity: sha512-8Mi7p7dm+mO1dHgRHHFdPu4RDTBk69Cn4P0B40vRQR+MrguUpwmKwhZy1kqYe3Km8/4nb+cyrCF+5SodOEmaow==}
+  eslint-plugin-tailwindcss@3.18.0:
+    resolution: {integrity: sha512-PQDU4ZMzFH0eb2DrfHPpbgo87Zgg2EXSMOj1NSfzdZm+aJzpuwGerfowMIaVehSREEa0idbf/eoNYAOHSJoDAQ==}
     engines: {node: '>=18.12.0'}
     peerDependencies:
       tailwindcss: ^3.4.0
@@ -1945,8 +1945,8 @@ packages:
   lru-cache@5.1.1:
     resolution: {integrity: sha512-KpNARQA3Iwv+jTA0utUVVbrh+Jlrr1Fv0e56GGzAFOXN7dk/FviaDW8LHmK52DlcH4WP2n6gI8vN1aesBFgo9w==}
 
-  lucide-react@0.472.0:
-    resolution: {integrity: sha512-wdJH3xJAMuelsCgSZLBGQunk20xwFSMsuY7R4lrbLd/QsEPf/n6EmbGUnvux7+OjDJC248Kuja+5gWGpC7f3SA==}
+  lucide-react@0.473.0:
+    resolution: {integrity: sha512-KW6u5AKeIjkvrxXZ6WuCu9zHE/gEYSXCay+Gre2ZoInD0Je/e3RBtP4OHpJVJ40nDklSvjVKjgH7VU8/e2dzRw==}
     peerDependencies:
       react: ^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0
 
@@ -4107,7 +4107,7 @@ snapshots:
     dependencies:
       eslint: 9.18.0(jiti@1.21.7)
 
-  eslint-plugin-tailwindcss@3.17.5(tailwindcss@3.4.17):
+  eslint-plugin-tailwindcss@3.18.0(tailwindcss@3.4.17):
     dependencies:
       fast-glob: 3.3.3
       postcss: 8.5.1
@@ -4624,7 +4624,7 @@ snapshots:
     dependencies:
       yallist: 3.1.1
 
-  lucide-react@0.472.0(react@19.0.0):
+  lucide-react@0.473.0(react@19.0.0):
     dependencies:
       react: 19.0.0
 
