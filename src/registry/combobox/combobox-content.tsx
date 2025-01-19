@@ -55,7 +55,7 @@ export const ComboboxContent = ({
         !isOpen && 'pointer-events-none',
         !openedOnce && 'hidden'
       )}
-      {...getMenuProps?.()}
+      {...getMenuProps?.({}, { suppressRefError: true })}
     >
       <ScrollArea className='[&>[data-radix-scroll-area-viewport]]:max-h-80 [&>[data-radix-scroll-area-viewport]]:p-1'>
         {children}

@@ -11,10 +11,10 @@ export const sortImports = {
         groups: [
           ['^react', '^@?\\w'],
           [
+            '^@/registry(/.*)?',
             '^@/components/ui/.*',
             '^@/components/(?!ui).*',
             '^@/hooks(/.*)?',
-            '^@/routes(/.*)?',
             '^@/utils(/.*)?',
             '^@/lib(/.*)?',
             '^@/config(/.*)?',

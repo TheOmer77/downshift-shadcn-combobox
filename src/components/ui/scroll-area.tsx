@@ -1,4 +1,8 @@
-import { ComponentPropsWithoutRef, ComponentRef, forwardRef } from 'react';
+import {
+  type ComponentPropsWithoutRef,
+  type ComponentRef,
+  forwardRef,
+} from 'react';
 import {
   Corner,
   Root,
